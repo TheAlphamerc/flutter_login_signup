@@ -118,9 +118,8 @@ class _WelcomePageState extends State<WelcomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Stack(
-        children: <Widget>[
-          Container(
+      body:SingleChildScrollView(
+        child:Container(
             padding: EdgeInsets.symmetric(horizontal: 20),
             height: MediaQuery.of(context).size.height,
             decoration: BoxDecoration(
@@ -156,7 +155,6 @@ class _WelcomePageState extends State<WelcomePage> {
               ],
             ),
           ),
-        ],
       ),
     );
   }
