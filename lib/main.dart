@@ -15,7 +15,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
          primarySwatch: Colors.blue,
          textTheme:GoogleFonts.latoTextTheme(textTheme).copyWith(
-           body1: GoogleFonts.montserrat(textStyle: textTheme.body1),
+           bodyText1: GoogleFonts.montserrat(textStyle: textTheme.bodyText1),
          ),
       ),
       debugShowCheckedModeBanner: false,
