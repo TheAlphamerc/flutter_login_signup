@@ -1,4 +1,7 @@
 import 'package:flutter/material.dart';
+import 'welcomePage.dart'
+import 'package:flutter_login_signup/src/loginPage.dart';
+import 'package:flutter_login_signup/src/signup.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 import 'src/welcomePage.dart';
@@ -19,7 +22,13 @@ class MyApp extends StatelessWidget {
          ),
       ),
       debugShowCheckedModeBanner: false,
-      home: WelcomePage(),
+      initialRoute: "splash",
+    navigatorObservers: [],
+    routes: {
+      "signup": (context) => SignUpPage(),
+      "loginPage": (context) => LoginPage(),
+      "welcomePage": (context) => WelcomePage(),
+    },
     );
   }
 }
