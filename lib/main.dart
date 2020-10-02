@@ -22,12 +22,11 @@ class MyApp extends StatelessWidget {
          ),
       ),
       debugShowCheckedModeBanner: false,
-      initialRoute: "splash",
-    navigatorObservers: [],
-    routes: {
-      "signup": (context) => SignUpPage(),
-      "loginPage": (context) => LoginPage(),
-      "welcomePage": (context) => WelcomePage(),
+      initialRoute: "welcomePage",
+      routes: {
+       "signup": (context) => SignUpPage(),
+       "loginPage": (context) => LoginPage(),
+       "welcomePage": (context) => WelcomePage(),
     },
     );
   }
