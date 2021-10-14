@@ -4,9 +4,9 @@ import 'package:flutter_login_signup/src/signup.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 class WelcomePage extends StatefulWidget {
-  WelcomePage({Key key, this.title}) : super(key: key);
+  WelcomePage({Key? key, this.title}) : super(key: key);
 
-  final String title;
+  final String? title;
 
   @override
   _WelcomePageState createState() => _WelcomePageState();
@@ -97,7 +97,7 @@ class _WelcomePageState extends State<WelcomePage> {
       text: TextSpan(
           text: 'd',
           style: GoogleFonts.portLligatSans(
-            textStyle: Theme.of(context).textTheme.display1,
+            textStyle: Theme.of(context).textTheme.headline1,
             fontSize: 30,
             fontWeight: FontWeight.w700,
             color: Colors.white,
